@@ -26,7 +26,7 @@ if($name != null){
 						
 
 						//页面跳转至登录页面
-						if (password_verify($password,$row)) {
+						if (password_verify($password,$row[0])) {
 							$url = "index2.php";
 							header("Refresh:3,URL=$url");
 							echo '登录成功！3s后跳转到主页！';
